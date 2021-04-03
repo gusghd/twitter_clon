@@ -20,7 +20,6 @@ function AuthForm() {
     }
     const onSubmit = async (e) => {
         e.preventDefault();
-
         try {
             if(newAccount) {
                await authService.createUserWithEmailAndPassword(email, password);
